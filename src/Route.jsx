@@ -5,6 +5,7 @@ import { Bookings } from "./pages/Bookings.jsx";
 import { Favourite } from "./pages/Favourites.jsx";
 import App from "./App.jsx";
 import { createBrowserRouter } from "react-router";
+import { SeatLayout } from "./pages/SeatLayout.jsx";
 
 export const route = createBrowserRouter([
   {
@@ -25,11 +26,11 @@ export const route = createBrowserRouter([
       },
       {
         path: "movies/:id",
-        element: <Movies />,
+        element: <MovieDetails />,
       },
       {
         path: "movies/:id/:date",
-        element: <MovieDetails />,
+        element: <SeatLayout />,
       },
       {
         path: "booking",
