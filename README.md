@@ -17,4 +17,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 # booking_ticket
 
-# time line 4.16
+# Environment variable need for project
+
+VITE_CURRENCY = '$'
+VITE_CLERK_PUBLISHABLE_KEY in clerk
