@@ -12,8 +12,9 @@ export function NavBar() {
 
   return (
     <div className="fixed top-0 left-0 z-50 w-full flex items-center justify-between px-6 md:px-16 lg:px-36 py-5 bg-transparent">
-      <Link to="/home" className="w-36">
-        <img src={assets.logo} alt="Logo" className="w-full h-auto" />
+      <Link to="/home" className="w-36 flex justify-center items-center ">
+        <img src={assets.rophimlogo} alt="Logo" className="w-20 h-auto" />
+        <h1 className="text-2xl font-medium">RoPhim</h1>
       </Link>
 
       <div
