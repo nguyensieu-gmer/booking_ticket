@@ -31,7 +31,7 @@ export function AddShows() {
     });
   };
 
-  const handleRemoveTime = (date, time) => {
+  const handleRemoveTime = async (date, time) => {
     setDateTimeSelection((prev) => {
       const filteredTimes = prev[date].filter((t) => t !== time);
       if (filteredTimes.length === 0) {
