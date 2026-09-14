@@ -6,6 +6,11 @@ import { Favourite } from "./pages/Favourites.jsx";
 import App from "./App.jsx";
 import { createBrowserRouter } from "react-router";
 import { SeatLayout } from "./pages/SeatLayout.jsx";
+import { Layout } from "./pages/admin/Layout.jsx";
+import { DashBoard } from "./pages/admin/DashBoard.jsx";
+import { AddShows } from "./pages/admin/AddShows.jsx";
+import { ListShows } from "./pages/admin/ListShows.jsx";
+import { ListBookings } from "./pages/admin/ListBookings.jsx";
 
 export const route = createBrowserRouter([
   {
@@ -39,6 +44,32 @@ export const route = createBrowserRouter([
       {
         path: "favourite",
         element: <Favourite />,
+      },
+      {
+        path: "admin",
+        element: <Layout />,
+        children: [
+          {
+            path: "dashboard",
+            element: <DashBoard />,
+          },
+          {
+            index: true,
+            element: <DashBoard />,
+          },
+          {
+            path: "add-shows",
+            element: <AddShows />,
+          },
+          {
+            path: "list-shows",
+            element: <ListShows />,
+          },
+          {
+            path: "list-bookings",
+            element: <ListBookings />,
+          },
+        ],
       },
     ],
   },
