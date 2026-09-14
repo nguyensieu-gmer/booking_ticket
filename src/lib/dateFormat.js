@@ -7,5 +7,3 @@ export const dateFormat = (date) => {
     minute: "numeric",
   });
 };
-
-//time 3:17:43
